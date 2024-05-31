@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Изменение изображения при наведении курсора</title>
+<style>
+  img {
+    width: 200px;
+    transition: transform 0.5s;
+  }
+  img:hover {
+    transform: scale(1.1);
+  }
+</style>
+</head>
+<body>
+<img id="myImage" src="photoi/mem3.jpg" onmouseover="changeImage()" onmouseout="restoreImage()" />
+
+<script src="app.js"></script>
+</body>
+</html>
